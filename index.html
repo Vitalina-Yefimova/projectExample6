@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
   <!-- <link rel="stylesheet" href="style.css"> -->
-  <link rel="stylesheet/less" type="text/css" href="styles.less" />
-  <script src="https://cdn.jsdelivr.net/npm/less"></script>
+  <!-- <link rel="stylesheet/less" type="text/css" href="style.less" /> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/less"></script> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -21,19 +22,19 @@
 <body>
   <header class="header">
     <div class="logo">
-      <img class="icon_chip" src="img/icon_chip.svg" alt="Icon Chip">
-      <h3>Чіп Чендж</h3>
+      <img class="logo_chip" src="img/icon_chip.svg" alt="Logo Chip">
+      <h3 class="logo_title">Чіп Чендж</h3>
     </div>
     <nav>
       <ul class="nav">
         <li><a href="#">Послуги</a></li>
-        <li><a class="converter" href="#">Конвертер валют</a></li>
+        <li><a class="nav_converter" href="#">Конвертер валют</a></li>
         <li><a href="#">Контакти</a></li>
         <li><a href="#">Задати питання</a></li>
       </ul>
     </nav>
     <div class="account">
-    <img class="icon_vector" src="img/vector.svg" alt="Icon vector">
+    <img class="account_vector" src="img/vector.svg" alt="Icon vector">
     <a href="#">Особистий кабінет</a>
     </div>
   </header>
@@ -44,9 +45,7 @@
         <p>Обмінник валют - навчальний</p>
         <a href="#">Конвертер валют</a>
       </div>
-      <div class="mastercard_debit">
       <img src="img/mastercard_debit.svg" alt="Mastercard Debit">
-    </div>
     </section>
     <section class="currency_converter">
       <div class="currency_converter_description">
@@ -56,11 +55,11 @@
         </p>
         <a href="#">Конвертувати валюту</a>
       </div>
-      <img class="black_card" src="img/black_card.jpg" alt="Black card in hand">
+      <img class="black_card" src="img/black_card.jpg" alt="Black card in hand" width="50%">
     </section>
   </main>
   <footer class="footer">
-    <section class="address">
+    <div class="address">
       <div class="address_data">
         <img src="img/icon_chip.svg" alt="Icon Chip">
         <span>Чіп Чендж</span>
@@ -70,7 +69,7 @@
           Ліцензія НБУ №156 <br>
           Ⓒ ПАТ ЧіпЧендж, 2019-2023
         </p>
-      </section>
+      </div>
       <ul class="navigation">
         <li><a href="#">Послуги</a></li>
         <li><a href="#">Конвертер валют</a></li>

@@ -1,0 +1,183 @@
+@import "_variables.less";
+@import "_mixins.less";
+
+.footer {
+  .flex_around;
+  background-color: @light-blue;
+  padding-top: 1vw;
+  gap: 2vw;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+.address_data {
+    
+    & span {
+      color: @black;
+      font-family: @additional-font;
+      .font (2.5vw, normal, 700, normal);
+    }
+
+    & img {
+      width: 2vw;
+    }
+}
+
+& p {
+  color: @grey;
+  .font (2vw, normal, 400, 3vw);
+  margin: @margin-zero;
+  padding-top: 1vw;
+}
+
+.navigation {
+  list-style-type: @list-style-type;
+  padding-left: 0;
+  margin: @margin-zero;
+
+  & li {
+    line-height: 1;
+  }
+
+  & a {
+    text-decoration: @text-decoration-none;
+    color: @grey;
+    .font (2vw, normal, 500, normal);
+  }
+}
+
+.support {
+
+  & img {
+    width: 1vw;
+  }
+
+
+  & a {
+    text-decoration: @text-decoration-none;
+    color: @black;
+    .font (2vw, normal, 500, normal);
+  }
+
+  & p {
+    color: @grey;
+    .font (2vw, normal, 400, normal);
+    padding-top: 0.5vw;
+  }
+}
+
+.free_call {
+
+  margin-left: @margin-zero;
+
+  & img {
+    width: 1.5vw;
+  }
+  
+  & a {
+    text-decoration: @text-decoration-none;
+    color: @black;
+    .font (2vw, normal, 500, normal);
+  }
+  
+  & p {
+    color: @grey;
+    .font (2vw, normal, 400, normal);
+    padding-top: 0.5vw;
+  }
+}
+
+.social_media {
+  & img {
+  width: 10vw;
+  height: 5vw;
+}
+}
+}
+
+@media @desktop {
+
+  .footer {
+  flex-direction: row;
+  column-gap: 1vw;
+  text-align: left;
+  align-items: start;
+  padding: 4vw;
+  
+  .address_data {
+    
+    & span {
+      .font (1.2vw, normal, 700, normal);
+    }
+
+    & img {
+      width: 1.3vw;
+      padding-right: 0.5vw;
+    }
+  }
+
+  & p {
+  .font (1vw, normal, 400, normal);
+  margin: @margin-zero;
+  padding-top: 1vw;
+}
+
+.navigation {
+  
+  .flex_between;
+  flex-direction: column;
+  gap: 0.5vw;
+
+  & a {
+    .font (1vw, normal, 500, normal);
+  }
+}
+
+.support {
+
+  padding-top: 0.3vw;
+
+  & img {
+    width: 0.7vw;
+    padding-right: 0.5vw;
+  }
+
+
+  & a {
+    .font (1.3vw, normal, 500, normal);
+  }
+
+  & p {
+    .font (1vw, normal, 400, normal);
+    padding-top: 0.5vw;
+    padding-left: 1.4vw;
+  }
+}
+
+.free_call {
+
+  & img {
+    width: 1vw;
+    padding-right: 0.5vw;
+  }
+
+  & a {
+    .font (1.3vw, normal, 500, normal);
+  }
+
+  & p {
+    .font (1vw, normal, 400, normal);
+    padding-top: 0.5vw;
+    padding-left: 1.8vw;
+    width: 13vw;
+  }
+}
+
+.social_media {
+  & img {
+    width: 8vw;
+    height: 1.8vw;
+  }
+}
+  }
+}

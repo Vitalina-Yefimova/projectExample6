@@ -1,0 +1,102 @@
+@import "_variables.less";
+@import "_mixins.less";
+
+.header {
+  .flex_around;
+  background-color: @light-blue;
+  align-items: center;
+}
+
+.logo {
+  .flex;
+  
+  & .logo_chip {
+    padding-right: 1vw;
+    width: 2.5vw;
+  }
+  
+  & .logo_title {
+    font-family: @additional-font;
+    .font (3.2vw, normal, 700, normal);
+    color: @black;
+  }
+}
+
+.nav {
+  list-style-type: @list-style-type;
+  padding-left: 0;
+  
+  & li {
+    .flex_around;
+  }
+
+  & a {
+    text-decoration: @text-decoration-none;
+    color: @grey;
+    .font (2.5vw, normal, 400, normal);
+  }
+  
+  & .nav_converter {
+    color: @blue;
+  }
+}
+
+.account {
+  .flex;
+
+  & a {
+    text-decoration: @text-decoration-none;
+    color: @black;
+    .font (2.5vw, normal, 400, normal);
+  }
+
+  & .account_vector {
+    width: 2.5vw;
+    padding-right: 1vw;
+  }
+}
+
+@media @desktop {
+
+.header {
+  .flex_between;
+  height: 5vw;
+}
+
+.logo {
+
+  padding-left: 2vw;
+
+  & .logo_chip {
+    width: 1.2vw;
+    padding-right: 0.5vw;
+    }
+  
+  & .logo_title {
+    .font (1.3vw, normal, 700, normal);
+    }
+  }
+
+.nav {
+  .flex;
+  gap: 4vw;
+
+  & a {
+    .font (1.1vw, normal, 400, normal);
+  }
+}
+
+.account {
+
+  padding-right: 2vw;
+
+  & a {
+    .font (1.1vw, normal, 400, normal);
+  }
+
+  & .account_vector {
+    width: 1.2vw;
+    padding-right: 0.5vw;
+  }
+}
+}

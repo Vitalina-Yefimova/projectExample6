@@ -132,7 +132,7 @@ h3 {
   margin-top: 29px;
 }
 
-.mastercard_debit {
+.chip_change img {
   width: 341px;
   height: 216px;
   margin-right: 251px;
@@ -142,7 +142,6 @@ h3 {
 
 .currency_converter {
   height: 554px;
-  background-color: #FFF;
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
@@ -174,7 +173,6 @@ h3 {
   height: 60px;
   background: #2C36F2;
   border-radius: 4px;
-  color: #707C87;
   justify-content: center;
   align-items: center;
   font-size: 18px;

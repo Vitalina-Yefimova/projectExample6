@@ -1,0 +1,77 @@
+@import "_variables.less";
+@import "_mixins.less";
+
+.currency_converter {
+  .flex_align_center;
+  flex-direction: column;
+  gap: 5vw;
+  padding-bottom: 10vw;
+  
+  .currency_converter_description {
+    
+    text-align: center;
+    
+    & h2 {
+      .font (4vw, normal, 700, 2vw);
+      color: @black;
+    }
+
+    & p {
+      .font (3vw, normal, 400, normal);
+      color: @grey;
+      padding-bottom: 2vw;
+    }
+
+    & a {
+      text-decoration: @text-decoration-none;
+      background-color: @blue;
+      color: @light-blue;
+      border-radius: 4px;
+      padding: 2vw;
+      .font (2vw, normal, 500, normal);
+    }
+  }
+
+  & img {
+    width: 50%;
+  }
+}
+
+@media @desktop {
+
+  .currency_converter {
+    .flex_around;
+    flex-direction: row;
+
+    & .currency_converter_description {
+      
+      text-align: justify;
+      padding-left: 12vw;
+      padding-bottom: 5vw;
+      padding-top: 8vw;
+
+      & h2 {
+        .font (3vw, normal, 700, normal);
+      }
+
+      & p {
+        .font (1.9vw, normal, 400, normal);
+      }
+
+      & a {
+        .flex_align_center;
+        justify-content: center;
+        padding: 0;
+        .font (1.6vw, normal, 500, normal);
+        width: 20vw;
+        height: 5vw;
+      }
+    }
+
+    & img {
+      width: 50vw;
+      height: 30vw;
+      padding-right: 2vw;
+    }
+  }
+}
