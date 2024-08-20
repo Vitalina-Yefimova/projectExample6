@@ -15,7 +15,7 @@ body {
   box-sizing: border-box;
 }
 
-header {
+.header {
   display: flex;
   height: 91px;
   background-color: #f6f7ff;
